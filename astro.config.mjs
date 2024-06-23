@@ -1,6 +1,5 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getBlogPermalink } from './src/utils/permalinks';
 
 import { defineConfig, squooshImageService } from 'astro/config';
 
@@ -29,7 +28,7 @@ export default defineConfig({
   output: 'static',
 
   redirects: {
-    '/': getBlogPermalink()
+    '/': '/blog'
   },
 
   integrations: [
