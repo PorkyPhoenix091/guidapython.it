@@ -1,6 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { getBlogPermalink } from './utils/permalinks';
+import { getBlogPermalink } from './src/utils/permalinks';
 
 import { defineConfig, squooshImageService } from 'astro/config';
 
