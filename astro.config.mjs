@@ -27,6 +27,10 @@ const whenExternalScripts = (items = []) =>
 export default defineConfig({
   output: 'static',
 
+  redirects: {
+    '/': getBlogPermalink()
+  },
+
   integrations: [
     tailwind({
       applyBaseStyles: false,
